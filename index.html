@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Solvolysis Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d121c;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    .card {
+      @apply bg-gray-900 p-6 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl;
+    }
+    .section-title {
+      @apply text-3xl md:text-4xl font-bold text-center mb-10 text-[#4ade80];
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-down { animation: fadeInDown 1s ease-out; }
+    .animate-fade-in-up { animation: fadeInUp 1s ease-out; }
+  </style>
+</head>
+<body class="text-gray-200 antialiased">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-950 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#">
+          <img src="image\Logo without slogan.png" alt="GLARION Logo" class="h-16">
+        </a>
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="#about" class="text-gray-400 hover:text-[#4ade80] transition duration-300">About</a>
+        <a href="#mission" class="text-gray-400 hover:text-[#4ade80] transition duration-300">Mission & Vision</a>
+        <a href="#process" class="text-gray-400 hover:text-[#4ade80] transition duration-300">Process</a>
+        <a href="#products" class="text-gray-400 hover:text-[#4ade80] transition duration-300">Products</a>
+        <a href="#team" class="text-gray-400 hover:text-[#4ade80] transition duration-300">Team</a>
+      </div>
+      <button id="mobile-menu-button" class="md:hidden text-gray-400 focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-950 shadow-inner py-2">
+      <a href="#about" class="block px-6 py-2 text-gray-300 hover:bg-gray-800">About</a>
+      <a href="#mission" class="block px-6 py-2 text-gray-300 hover:bg-gray-800">Mission & Vision</a>
+      <a href="#process" class="block px-6 py-2 text-gray-300 hover:bg-gray-800">Process</a>
+      <a href="#products" class="block px-6 py-2 text-gray-300 hover:bg-gray-800">Products</a>
+      <a href="#team" class="block px-6 py-2 text-gray-300 hover:bg-gray-800">Team</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative bg-gradient-to-br from-[#004d36] via-gray-900 to-[#0d121c] py-20 md:py-32">
+    <div class="container mx-auto px-6 text-center relative z-10">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight text-white mb-4 animate-fade-in-down">GLARION</h1>
+      <p class="text-xl md:text-2xl text-gray-300 font-light tracking-wide animate-fade-in-up">Where waste finds a new purpose</p>
+      <p class="text-lg md:text-xl text-gray-400 font-light mt-4 animate-fade-in-up">Microwave-Assisted Green Solvolysis of Wind Turbine Blades</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title">About the Project</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <p class="text-lg leading-relaxed text-gray-300">
+            This study presents a groundbreaking approach to addressing the challenge of decommissioned wind turbine blades. Traditional recycling methods are often energy-intensive or fail to preserve fiber integrity.
+          </p>
+          <p class="text-lg leading-relaxed text-gray-300">
+            Our pathway proposes to convert composite blade waste into valuable, high-performance materials using a microwave-assisted solvolysis process with a green solvent mixture.
+          </p>
+        </div>
+        <div class="flex justify-center md:justify-end">
+          <img src="image\websiite.jpg" alt="Wind Turbine Blades" class="w-full max-w-lg rounded-xl shadow-xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision Section -->
+  <section id="mission" class="py-20 bg-gray-950">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title">Mission & Vision</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="card text-center">
+          <i class="fas fa-bullseye text-4xl text-[#4ade80] mb-4"></i>
+          <h3 class="text-2xl font-semibold text-white mb-3">Our Mission</h3>
+          <p class="text-gray-300 leading-relaxed">
+            To revolutionize wind turbine blade recycling through sustainable, energy-efficient solutions that reduce environmental impact and promote a circular economy.
+          </p>
+        </div>
+        <div class="card text-center">
+          <i class="fas fa-eye text-4xl text-[#4ade80] mb-4"></i>
+          <h3 class="text-2xl font-semibold text-white mb-3">Our Vision</h3>
+          <p class="text-gray-300 leading-relaxed">
+            To lead the future of green recycling technologies worldwide, turning industrial waste into valuable resources that empower sustainable industries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title">Final Products</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <div class="card">
+            <div class="flex items-center space-x-4 mb-4">
+              <i class="fas fa-lightbulb text-4xl text-[#4ade80]"></i>
+              <h3 class="text-2xl font-semibold text-white">Photoluminescent Safety Tiles</h3>
+            </div>
+            <p class="text-gray-300">
+              High-performance tiles glowing in the dark for safety applications in low-light conditions.
+            </p>
+          </div>
+          <div class="card">
+            <div class="flex items-center space-x-4 mb-4">
+              <i class="fas fa-shoe-prints text-4xl text-[#4ade80]"></i>
+              <h3 class="text-2xl font-semibold text-white">Rubber Industrial Floor Blocks</h3>
+            </div>
+            <p class="text-gray-300">
+              Durable, sustainable floor blocks for industrial and commercial settings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-20 bg-gray-950">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title">Meet the Team</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card flex flex-col items-center text-center">
+          <img src="image/Humay.jpg.jpg" alt="Humay Hamidli" class="w-32 h-32 rounded-full mb-4 object-cover border-4 border-[#006d4b]">
+          <h3 class="text-xl font-semibold text-white">Humay Hamidli</h3>
+          <p class="text-gray-400">Conceptual design and holistic approach</p>
+        </div>
+        <div class="card flex flex-col items-center text-center">
+          <img src="image/Gozal.jpg.jpg" alt="Gozal Humbatzada" class="w-32 h-32 rounded-full mb-4 object-cover border-4 border-[#006d4b]">
+          <h3 class="text-xl font-semibold text-white">Gozal Humbatzada</h3>
+          <p class="text-gray-400">Supply chain and product development</p>
+        </div>
+        <div class="card flex flex-col items-center text-center">
+          <img src="image/Hasan.jpg.jpg" alt="Hasan Babayev" class="w-32 h-32 rounded-full mb-4 object-cover border-4 border-[#006d4b]">
+          <h3 class="text-xl font-semibold text-white">Hasan Babayev</h3>
+          <p class="text-gray-400">Process development and economic evaluation </p>
+        </div>
+        <div class="card flex flex-col items-center text-center">
+          <img src="image/Nigar.jpg.jpg" alt="Nigar Baghirzade" class="w-32 h-32 rounded-full mb-4 object-cover border-4 border-[#006d4b]">
+          <h3 class="text-xl font-semibold text-white">Nigar Baghirzade</h3>
+          <p class="text-gray-400">Footprint analysis and control strategy</p>
+        </div>
+        <div class="card flex flex-col items-center text-center">
+          <img src="image/Muntaha.jpg.jpg" alt="Muntaha Shaikh" class="w-32 h-32 rounded-full mb-4 object-cover border-4 border-[#006d4b]">
+          <h3 class="text-xl font-semibold text-white">Muntaha Shaikh</h3>
+          <p class="text-gray-400">Marketing strategy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-950 py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="text-lg mb-6 text-gray-300 max-w-2xl mx-auto">
+        For inquiries or further information about the GLARION project, please feel free to reach out to our team or the Institute of Chemical Engineering at Ulm University.
+      </p>
+      <div class="flex flex-col items-center gap-4">
+        <a href="mailto:humay.hamidli@uni-ulm.de" class="text-lg font-semibold text-[#4ade80] hover:text-white hover:underline flex items-center gap-2">
+          <i class="fas fa-envelope"></i>
+          humay.hamidli@uni-ulm.de
+        </a>
+                <a href="mailto:gozal.humbatzada@uni-ulm.de" class="text-lg font-semibold text-[#4ade80] hover:text-white hover:underline flex items-center gap-2">
+          <i class="fas fa-envelope"></i>
+          gozal.humbatzada@uni-ulm.de
+        </a>
+                <a href="mailto:hasan.babayev@uni-ulm.de" class="text-lg font-semibold text-[#4ade80] hover:text-white hover:underline flex items-center gap-2">
+          <i class="fas fa-envelope"></i>
+          hasan.babayev@uni-ulm.de
+        </a>
+                <a href="mailto:nigar.baghirzade@uni-ulm.de" class="text-lg font-semibold text-[#4ade80] hover:text-white hover:underline flex items-center gap-2">
+          <i class="fas fa-envelope"></i>
+          nigar.baghirzade@uni-ulm.de
+        </a>
+                <a href="mailto:muntaha.shaikh@uni-ulm.de" class="text-lg font-semibold text-[#4ade80] hover:text-white hover:underline flex items-center gap-2">
+          <i class="fas fa-envelope"></i>
+          muntaha.shaikh@uni-ulm.de
+        </a>
+        <p class="text-sm text-gray-500">
+          Institute of Chemical Engineering, Ulm University
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <div class="mb-4">
+        <a href="#" class="text-xl font-bold tracking-tight text-[#4ade80]">GLARION</a>
+      </div>
+      <p class="text-gray-400 text-sm mb-2">&copy; 2024 Ulm University. All rights reserved.</p>
+      <p class="text-gray-500 text-xs">Developed for the Institute of Chemical Engineering</p>
+    </div>
+  </footer>
+
+</body>
+</html>
